@@ -1,4 +1,3 @@
-from msilib.schema import Directory
 from pathlib import Path
 
 class Site:
@@ -16,4 +15,4 @@ class Site:
         for path in self.source.rglob("*"):
             if path.is_dir():
                 self.create_dir(path)
-            
+                
